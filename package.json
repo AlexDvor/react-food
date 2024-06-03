@@ -39,7 +39,7 @@
 		"test": "jest",
 		"test:w": "jest --watch --coverage false",
 		"predeploy": "npm run build",
-		"deploy": "gh-pages -d build"
+		"deploy": "gh-pages -d dist"
 	},
 	"browserslist": {
 		"production": [
