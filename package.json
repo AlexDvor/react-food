@@ -1,6 +1,6 @@
 {
 	"name": "food-project",
-	"homepage": "https://github.com/AlexDvor/practice_modules/tree/main/react_food_spa",
+	"homepage": "https://AlexDvor.github.io/react__food__spa",
 	"version": "0.1.0",
 	"private": true,
 	"type": "module",
@@ -37,7 +37,9 @@
 		"preview": "vite preview",
 		"lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
 		"test": "jest",
-		"test:w": "jest --watch --coverage false"
+		"test:w": "jest --watch --coverage false",
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d build"
 	},
 	"browserslist": {
 		"production": [
@@ -50,5 +52,8 @@
 			"last 1 firefox version",
 			"last 1 safari version"
 		]
+	},
+	"devDependencies": {
+		"gh-pages": "^6.1.1"
 	}
 }
